@@ -17,8 +17,8 @@ import com.amazonaws.services.sns.model.SubscribeRequest;
 public class AWS_SMS_Util {
 	
 	public static void sendSMSMessage(String message, String Arn) {
-		String KEY = "";
-	    String val = "";
+		String KEY = null;
+	    String val = null;
 	    AmazonSNSClient snsClient = new AmazonSNSClient(new  BasicAWSCredentials(KEY, val));
 	    snsClient.setRegion(Region.getRegion(Regions.AP_SOUTHEAST_1));
 	    
