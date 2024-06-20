@@ -17,8 +17,8 @@ import com.amazonaws.services.sns.model.SubscribeRequest;
 public class AWS_SMS_Util {
 	
 	public static void sendSMSMessage(String message, String Arn) {
-		String ACCESS_KEY = "AKIAJ2PJD6ZAU5O45OAA";
-	    String SECRET_KEY = "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";
+		String ACCESS_KEY = "";
+	    String SECRET_KEY = "";
 	    AmazonSNSClient snsClient = new AmazonSNSClient(new  BasicAWSCredentials(ACCESS_KEY, SECRET_KEY));
 	    snsClient.setRegion(Region.getRegion(Regions.AP_SOUTHEAST_1));
 	    
